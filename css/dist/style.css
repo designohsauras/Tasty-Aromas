@@ -6104,15 +6104,15 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("/Tasty-Aromas/fonts/Montserrat-Regular.ttf") format("truetype");
   font-family: "Montserrat Reg";
 }
 @font-face {
-  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+  src: url("/Tasty-Aromas/fonts/Montserrat-Medium.ttf") format("truetype");
   font-family: "Montserrat Med";
 }
 @font-face {
-  src: url("/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  src: url("/Tasty-Aromas/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
   font-family: "Playfair Bold";
 }
 * {
