@@ -3,7 +3,6 @@
 @import "../fontawesome/scss/solid.scss";
 @import "../fontawesome/scss/brands.scss";
 
-
 @mixin media-query($size) {
     @media screen and (max-width: $size) {
         @content;
@@ -53,6 +52,14 @@ body {
         object-fit: cover;
         object-position: center;
     }
+
+    @include media-query(768px) {
+        min-height: 60vh;
+
+        img {
+            height: 60vh;
+        }
+    }
 }
 
 /*
@@ -85,6 +92,17 @@ body {
             text-align: justify;
             font-size: larger;
         }
+
+        @include media-query(768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: medium;
+                text-align: left;
+            }
+        }
     }
 
     img {
@@ -107,13 +125,11 @@ body {
 *   Our Team
 */
 .team-sec {
-
     .heading-1 {
         text-align: center;
         padding-left: 2rem;
         margin: 3rem 0;
         font-family: "Playfair Bold" !important;
-        
     }
 
     .our-team {
@@ -129,6 +145,7 @@ body {
 
         h4 {
             margin: 1rem;
+            text-align: center;
         }
     }
 }
@@ -136,7 +153,6 @@ body {
 /*
 *   Contact Us
 */
-
 
 .contact-sec {
     min-height: 100vh;
@@ -147,7 +163,7 @@ body {
     }
 
     .contact-sec-heading {
-        padding: 2em 2rem;
+        padding: 2em;
         text-align: center;
     }
 
@@ -184,11 +200,27 @@ body {
     }
 
     @include media-query(768px) {
+        padding: 1rem;
+
+        .contact-sec-heading {
+            padding: 1em 0;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: medium;
+            text-align: center;
+        }
 
         .gmap_canvas,
         #gmap_canvas {
             height: 250px;
             width: 250px;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -219,14 +251,28 @@ body {
         font-size: large;
         font-weight: bold;
     }
-}
 
+    @include media-query(768px) {
+        padding: 0;
+
+        .col-md {
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: medium;
+        }
+    }
+}
 
 /*
 *   Footer
 */
 footer {
-
     a:focus,
     a:hover {
         text-decoration: none;
@@ -280,6 +326,12 @@ footer {
 
         span {
             padding: 0.5em;
+        }
+    }
+
+    @include media-query(768px) {
+        .mini-footer p {
+            font-size: 13px;
         }
     }
 }
